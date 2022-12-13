@@ -1,4 +1,30 @@
-{include 'templates/header.tpl'}
+<?php
+/* Smarty version 3.1.39, created on 2022-12-14 00:50:47
+  from 'C:\xampp\htdocs\Ferreteria\templates\index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_63990fd73b9454_36044730',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'ba7af01aae9182ad2cdaac6bcdeb597bc7b34783' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\index.tpl',
+      1 => 1670975446,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:templates/header.tpl' => 1,
+    'file:templates/footer.tpl' => 1,
+  ),
+),false)) {
+function content_63990fd73b9454_36044730 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
     <nav class="navbar navbar-expand-lg bg-light row"> <!--NAV-->
       <div class="container-fluid">
       <ul class="asd row">
@@ -111,4 +137,6 @@
         </div>
       </div>
     </div>
-{include 'templates/footer.tpl'}
+<?php $_smarty_tpl->_subTemplateRender('file:templates/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}
