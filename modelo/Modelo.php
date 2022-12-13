@@ -10,10 +10,10 @@ class Modelo {
     }
 
     public function create_connection() {
-        $host = 'localhost';
-        $userName = 'root';
-        $password = '';
-        $database = 'ferreteria';
+        $host = 'localhost'; //host
+        $userName = 'root';  //usuario
+        $password = '';      //contraseña
+        $database = 'ferreteria';   //BBDD
 
         try {
             $db = new PDO("mysql:host=$host;dbname=$database;charset=utf8", $userName, $password);

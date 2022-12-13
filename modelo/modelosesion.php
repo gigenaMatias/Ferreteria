@@ -30,8 +30,8 @@ class modelosesion extends Modelo {
 
     }
 
+    //generar Qr a partir de varios parametros
     public function generarQr($id,$tamanio,$calidad,$margen){
         QRcode::png("www.mondocn.com.ar/producto/".$id,false,$calidad,$tamanio,$margen);
-        //QRCode::png(url, false, q, tamaño, margen);
     }
 }

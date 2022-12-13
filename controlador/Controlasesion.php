@@ -4,17 +4,19 @@
    // include_once 'modelo/Modeloproducto.php';
 
     class controlsesion{
-
+        //contruccion de clase
         public function __construct(){
             $this->modelosesion = new modelosesion();
             $this->vistaadmin = new vistaadmin();
            // $this->modeloproducto = new modeloproducto();
         }
 
+        //mostrar formulario de logueo
         public function mostrarlogin(){
             $this->vistaadmin->showlogin();
         }
 
+        //mostrar panel admin
         public function mostrarpanel(){
             if (!isset($_SESSION['USERNAME'])){
                 $this->vistaadmin->showlogin();
@@ -22,10 +24,12 @@
                 $this->vistaadmin->showpanel();
             }      
         }
-
+        
+        //mostrar home
         function mostrarHome(){
             $this->vistaadmin->mostrarHome();
         }
+
         //busca producto por nombre
         function buscanombre(){
             if (!isset($_SESSION['USERNAME'])){
@@ -42,11 +46,13 @@
             }
         }
 
+        //desloguear
         public function logout(){
             AuthHelper::logout();
             header("Location: " . BASE_URL . 'home');
         }
 
+        //generar qr por $_POST  api  QRCODE
         public function qr($id){
             $tamanio = $_POST['tamanio'];
             $calidad = $_POST['calidad'];
@@ -55,6 +61,7 @@
             $this->vistaadmin->mostrarQr($qr);
         }
 
+        //verificacion de usuario y contraseña de logueo
         public function verify() {
             if(!empty($_POST['username']) && !empty($_POST['password'])) {
 

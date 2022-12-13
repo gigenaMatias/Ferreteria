@@ -15,20 +15,23 @@
   switch($urlParts[0]){
 
       case 'home':
-        //$controlasesion->mostrarlogin(); //muestra logueo
-        $controlasesion->mostrarHome();
+        $controlasesion->mostrarHome(); // home
       break;
       
       case 'panel':
-        $controlasesion->mostrarpanel();
+        $controlasesion->mostrarpanel();  //formulario de admin
+      break;
+
+      case 'login':
+        $controlasesion->mostrarlogin(); //formulario de logueo
       break;
 
       case 'verify':
-        $controlasesion->verify();
+        $controlasesion->verify(); //verificacion de usuario y contraseña
       break;
 
       default:
-        echo '<h1> Error 404 lobby no encontrado :c</h1>';
+        echo '<h1> Error 404 lobby no encontrado :c</h1>'; // error 404
       break;
   }
 
