@@ -23,6 +23,9 @@
             }      
         }
 
+        function mostrarHome(){
+            $this->vistaadmin->mostrarHome();
+        }
         //busca producto por nombre
         function buscanombre(){
             if (!isset($_SESSION['USERNAME'])){

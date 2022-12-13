@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-11-11 15:30:57
-  from 'C:\xampp\htdocs\ferreteria\templates\panel.tpl' */
+/* Smarty version 3.1.39, created on 2022-12-13 23:25:11
+  from 'C:\xampp\htdocs\ferreteria\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_636e5ca1e18661_67777134',
+  'unifunc' => 'content_6398fbc763bc14_40198513',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '2f816e9ac3ccaf8fd92b89069befefff3f497a9f' => 
+    '2181d61d5a6ced287328ecbfed330d7d8df8d138' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\ferreteria\\templates\\panel.tpl',
-      1 => 1668176812,
+      0 => 'C:\\xampp\\htdocs\\ferreteria\\templates\\index.tpl',
+      1 => 1670970308,
       2 => 'file',
     ),
   ),
@@ -22,10 +22,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_636e5ca1e18661_67777134 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6398fbc763bc14_40198513 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
-<nav class="navbar navbar-expand-lg bg-light"> <!--NAV-->
+<body>
+    <nav class="navbar navbar-expand-lg bg-light"> <!--NAV-->
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

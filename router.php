@@ -15,7 +15,8 @@
   switch($urlParts[0]){
 
       case 'home':
-        $controlasesion->mostrarlogin(); //muestra logueo
+        //$controlasesion->mostrarlogin(); //muestra logueo
+        $controlasesion->mostrarHome();
       break;
       
       case 'panel':

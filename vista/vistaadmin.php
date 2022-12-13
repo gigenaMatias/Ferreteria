@@ -20,6 +20,10 @@ class vistaadmin extends Visor{
         $this->getSmarty()->display('templates/panel.tpl');
     }
     
+    function mostrarHome(){
+        $this->getSmarty()->display('templates/index.tpl');
+    }
+
     function nosencontro(){
         $this->getSmarty()->display('templates/404.tpl');
     }
