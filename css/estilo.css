@@ -1,6 +1,11 @@
+body {
+    background-color: aquamarine;
+}
+
 li {
     list-style-type: none !important;
 }
+
 ul {
     list-style-type: none !important;
 }

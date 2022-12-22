@@ -1,114 +1,149 @@
 {include 'templates/header.tpl'}
-    <nav class="navbar navbar-expand-lg bg-light row"> <!--NAV-->
-      <div class="container-fluid">
-      <ul class="asd row">
-          <li class="nav-item col">
-            <a class="navbar-brand asd col" href="#">Ferreteria</a>
+    <nav> <!--NAV-->
+      <ul class="nav nav-tabs">
+          <li class="nav-item col-4">
+            <a class="nav-link active" aria-current="page" href="#">Inventario</a>
           </li>
-          <li class="nav-item col">
-            <a class="nav-link " href="#">Lista de Productos</a>
+          <li class="nav-item col-4">
+            <a class="nav-link link-primary" href="#">Proveedores</a>
           </li>
-          <li class="nav-item col">
-            <a class="nav-link">Tarifario</a>
+          <li class="nav-item col-4">
+            <a class="nav-link link-primary" href="#">Clientes</a>
           </li>
       </ul>
-      </div>
     </nav>
 
+    <div class="row my-2 mx-4 justify-content-between">
+      <button type="button" class="btn btn-success col-1" data-bs-toggle="modal" data-bs-target="#nuevoProductoModal"> 
+        Nuevo producto
+      </button>
+      <button type="button" class="btn btn-secondary col-1" data-bs-toggle="modal" data-bs-target="#talonarioModal">
+        Talonario
+      </button>
+    </div>
 
-    <div class="container-fluid row">
-      <div class="bloqueInventario col-7">
+{include 'templates/modals/modalTalonario.tpl'}
+{include 'templates/modals/modalNuevoProducto.tpl'}
+{include 'templates/modals/modalModificarProducto.tpl'}
+{include 'templates/modals/modalEliminarProducto.tpl'}
+
+    <!--bloque inventario-->
+    <div class="container-fluid row my-1">
         <!--filtros-->
-        <div class="Filtros">
-          <ul class="row">
-            <li id="inputNombreProducto" class="col">
-              <input type="text" value="nombre del producto">
-            </li>
-            <li id="inputCaracteristicas" class="col">
-              <input type="text" value="caracteristicas del producto">
-            </li>
-
-            <!--menu dropdown-->
-            <div class="dropdown col">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Proveedores
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+        <form class="my-3">
+          <div class="row align-items-center ">
+            <div class="col form-floating">
+              <input type="text" class="form-control" id="inputNombreProducto" placeholder="producto">
+              <label for="inputNombreProducto" class="ms-2">Nombre del producto</label>
+              </div>
+            <div class="col form-floating">
+              <input type="text" class="form-control" id="inputCaracteristica" placeholder="caracteristica producto">
+              <label for="inputCaracteristica" class="ms-2">Caracteristica del producto</label>
             </div>
-          </ul>
-        </div>
-      
-        <div class="container-fluid listaInventario">
+            
+            <div class="col me-5">
+              <select class="form-select py-3" id="proveedores" aria-label="Default select example">
+                <option selected>Proveedores</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+          </div>
+            <button class="btn btn-primary col-1" type="button" aria-expanded="false"> Buscar </button>
+          </div>
+        </form>
+
+        <!--planilla inventario-->
+        <div class="container-fluid">
           <ul>
-            <li class="row item1">
-                <div class="col"> nombre producto </div>
-                <div class="col"> proveedor </div>
-                <div class="col"> caracteristica </div>
-                <div class="col"> precio ejemplo </div>
-                <div class="col"> stock disponible </div>
+            <li class="row text-white bg-primary  bg-opacity-75 align-items-center">
+               <div class="col"> nombre producto </div>
+               <div class="col"> proveedor </div>
+               <div class="col"> caracteristica </div>
+               <div class="col"> precio ejemplo </div>
+               <div class="col"> stock disponible </div>
+               <div class="dropdown col-1">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success">
+                      +
+                    </button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                      <ul class="dropdown-menu bg-secondary">
+                        <li><a class="dropdown-item text-bg-warning" href="#">Editar</a></li>
+                        <li><a class="dropdown-item text-bg-danger" href="#">Eliminar</a></li>
+                      </ul>
+                </div>  
+               </div>
+             </li>
+             <li class="row text-white bg-secondary bg-opacity-90 align-items-center">
+               <div class="col"> nombre producto </div>
+               <div class="col"> proveedor </div>
+               <div class="col"> caracteristica </div>
+               <div class="col"> precio ejemplo </div>
+               <div class="col"> stock disponible </div>
+               <div class="dropdown col-1">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success">
+                      +
+                    </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                      <ul class="dropdown-menu bg-primary">
+                        <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+                          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                        </div>
+                      </ul>
+                  </div>  
+                </div>
               </li>
-              <li class="row item2">
-                <div class="col"> nombre producto </div>
-                <div class="col"> proveedor </div>
-                <div class="col"> caracteristica </div>
-                <div class="col"> precio ejemplo </div>
-                <div class="col"> stock disponible </div>
-              </li>
-              <li class="row item1">
-                <div class="col"> nombre producto </div>
-                <div class="col"> proveedor </div>
-                <div class="col"> caracteristica </div>
-                <div class="col"> precio ejemplo </div>
-                <div class="col"> stock disponible </div>
-              </li>
-              <li class="row item2">
-                <div class="col"> nombre producto </div>
-                <div class="col"> proveedor </div>
-                <div class="col"> caracteristica </div>
-                <div class="col"> precio ejemplo </div>
-                <div class="col"> stock disponible </div>
-              </li>
+             <li class="row text-white bg-primary bg-opacity-75 align-items-center">
+               <div class="col"> nombre producto </div>
+               <div class="col"> proveedor </div>
+               <div class="col"> caracteristica </div>
+               <div class="col"> precio ejemplo </div>
+               <div class="col"> stock disponible </div>
+               <div class="dropdown col-1">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success">
+                      +
+                    </button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                      <ul class="dropdown-menu bg-secondary">
+                        <li><a class="dropdown-item text-bg-warning" href="#">Editar</a></li>
+                        <li><a class="dropdown-item text-bg-danger" href="#">Eliminar</a></li>
+                      </ul>
+                </div>  
+              </div>
+             </li>
+             <li class="row text-white bg-secondary bg-opacity-90 align-items-center">
+               <div class="col"> nombre producto </div>
+               <div class="col"> proveedor </div>
+               <div class="col"> caracteristica </div>
+               <div class="col"> precio ejemplo </div>
+               <div class="col"> stock disponible </div>
+               <div class="dropdown col-1">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success">
+                      +
+                    </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                      <ul class="dropdown-menu bg-primary">
+                        <li><a class="dropdown-item text-bg-warning" href="#">Editar</a></li>
+                        <li><a class="dropdown-item text-bg-danger" href="#">Eliminar</a></li>
+                      </ul>
+                  </div>  
+                </div>               
+             </li>
           </ul>
         </div>
 
-      </div>
-
-      <div class="bloqueTarifario col">
-        <div> Talonario </div>
-        <div class="container-fluid listaInventario">
-          <ul>
-            <li class="row item1">
-                <div class="col-6"> nombre producto </div>
-                <div class="col-2"> cantidad </div>
-                <div class="col"> precio costo </div>
-              </li>
-              <li class="row item2">
-                <div class="col-6"> nombre producto </div>
-                <div class="col-2"> cantidad </div>
-                <div class="col"> precio costo </div>
-              </li>
-              <li class="row item1">            
-                <div class="col-6"> nombre producto </div>
-                <div class="col-2"> cantidad </div>
-                <div class="col"> precio costo </div>
-              </li>
-              <li class="row item2">
-                <div class="col-6"> nombre producto </div>
-                <div class="col-2"> cantidad </div>
-                <div class="col"> precio costo </div>
-            </li>
-          </ul>
-          <form class="row">
-            <button class="btn btn-secondary col-2" type="button" > 
-            imprimir </button>
-            <div class="col-8"></div>
-            <div class="col"> Total:$ </div>
-          </form>
-        </div>
-      </div>
     </div>
 {include 'templates/footer.tpl'}
