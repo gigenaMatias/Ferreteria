@@ -13,4 +13,4 @@
     
 
 </head>
-<body style="min-width:900px">
+<body style="min-width:1000px">
