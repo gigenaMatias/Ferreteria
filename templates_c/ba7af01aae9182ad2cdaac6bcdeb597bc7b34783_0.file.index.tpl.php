@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-12-22 21:51:06
+/* Smarty version 3.1.39, created on 2022-12-23 04:10:42
   from 'C:\xampp\htdocs\Ferreteria\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_63a4c33aae28e6_85678092',
+  'unifunc' => 'content_63a51c328ffa61_45446328',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ba7af01aae9182ad2cdaac6bcdeb597bc7b34783' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\index.tpl',
-      1 => 1671742265,
+      1 => 1671764101,
       2 => 'file',
     ),
   ),
@@ -26,7 +26,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_63a4c33aae28e6_85678092 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63a51c328ffa61_45446328 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <nav> <!--NAV-->
@@ -196,6 +196,34 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                   </div>  
                 </div>               
              </li>
+             <!--elementos automatizados (recordatorio, agregarle los corchetes)
+             foreach from = $listaProductos item=producto
+                <li class="row text-white bg-secondary bg-opacity-90 align-items-center">
+                  <div class="col"> $producto->nombre </div>
+                  <div class="col"> $producto->codigo </div>
+                  <div class="col"> $producto->proveedor </div>
+                  <div class="col"> $producto->caracteristica </div>
+                  <div class="col"> $producto->precio  </div>
+                  <div class="col"> $producto->stock </div>
+                  <div class="dropdown col-1">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-success">
+                          +
+                        </button>
+                        <button type="button" id=$producto->id class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu bg-primary bg-opacity-75">
+                          <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+                            <button type="button" id=$producto->id class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
+                            <button type="button" id=$producto->id class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                          </div>
+                        </ul>
+                      </div>  
+                    </div>               
+                </li>
+             /foreach
+             -->
           </ul>
         </div>
 

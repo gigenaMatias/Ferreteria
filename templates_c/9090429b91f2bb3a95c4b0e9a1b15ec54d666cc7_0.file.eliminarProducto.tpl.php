@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-12-22 21:28:42
+/* Smarty version 3.1.39, created on 2022-12-23 04:12:45
   from 'C:\xampp\htdocs\Ferreteria\templates\modals\eliminarProducto.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_63a4bdfa6a0ec6_26385644',
+  'unifunc' => 'content_63a51cad539725_14956151',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9090429b91f2bb3a95c4b0e9a1b15ec54d666cc7' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\modals\\eliminarProducto.tpl',
-      1 => 1671739838,
+      1 => 1671765164,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63a4bdfa6a0ec6_26385644 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63a51cad539725_14956151 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="modal fade" id="eliminarProductoModal" tabindex="-1" aria-labelledby="eliminar-Producto" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -36,10 +36,10 @@ function content_63a4bdfa6a0ec6_26385644 (Smarty_Internal_Template $_smarty_tpl)
           <p class=" fs-4 text-black fw-bold text-center"> ¿Está seguro?</p>
       </div>
     
-        <div class="row justify-content-evenly mb-4">
+        <form class="row justify-content-evenly mb-4">
           <button type="button" class="btn btn-secondary col-4" data-bs-dismiss="modal">Cancelar</button>
           <button type="button" class="btn btn-primary col-4">Eliminar</button>
-        </div>         
+        </form>         
     
     </div>
   </div>

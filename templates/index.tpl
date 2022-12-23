@@ -165,6 +165,34 @@
                   </div>  
                 </div>               
              </li>
+             <!--elementos automatizados (recordatorio, agregarle los corchetes)
+             foreach from = $listaProductos item=producto
+                <li class="row text-white bg-secondary bg-opacity-90 align-items-center">
+                  <div class="col"> $producto->nombre </div>
+                  <div class="col"> $producto->codigo </div>
+                  <div class="col"> $producto->proveedor </div>
+                  <div class="col"> $producto->caracteristica </div>
+                  <div class="col"> $producto->precio  </div>
+                  <div class="col"> $producto->stock </div>
+                  <div class="dropdown col-1">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-success">
+                          +
+                        </button>
+                        <button type="button" id=$producto->id class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu bg-primary bg-opacity-75">
+                          <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+                            <button type="button" id=$producto->id class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
+                            <button type="button" id=$producto->id class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                          </div>
+                        </ul>
+                      </div>  
+                    </div>               
+                </li>
+             /foreach
+             -->
           </ul>
         </div>
 

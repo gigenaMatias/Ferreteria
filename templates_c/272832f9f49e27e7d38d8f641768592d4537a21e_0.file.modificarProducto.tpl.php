@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-12-22 21:28:42
+/* Smarty version 3.1.39, created on 2022-12-23 04:10:43
   from 'C:\xampp\htdocs\Ferreteria\templates\modals\modificarProducto.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_63a4bdfa64da78_33278983',
+  'unifunc' => 'content_63a51c3316ef05_13649733',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '272832f9f49e27e7d38d8f641768592d4537a21e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\modals\\modificarProducto.tpl',
-      1 => 1671735589,
+      1 => 1671765019,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63a4bdfa64da78_33278983 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63a51c3316ef05_13649733 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="modal fade" id="edicionProductoModal" tabindex="-1" aria-labelledby="edicion-Producto" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -80,7 +80,9 @@ function content_63a4bdfa64da78_33278983 (Smarty_Internal_Template $_smarty_tpl)
         
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
+        <form>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </form>
       </div>
       
     </div>

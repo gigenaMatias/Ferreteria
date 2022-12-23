@@ -61,6 +61,30 @@
              </li>
           </ul>
         </div>
+
+        <!-- elementos automatizados 
+        foreach from = $listaProveedores item=proveedor
+            <li class="row text-white bg-primary  bg-opacity-75 align-items-center">
+               <div class="col"> $proveedor->nombre </div>
+               <div class="col"> $proveedor->cuil </div>
+               <div class="col"> $proveedor->multiplicador </div>
+               <div class="col"> $proveedor->mail </div>
+               <div class="col"> $proveedor->telefono </div>
+               <div class="col"> $proveedor->direccion </div>
+               <div class="dropdown col-1">
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu bg-secondary bg-opacity-90">
+                      <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+                        <button type="button" id=$proveedor->id class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
+                        <button type="button" id=$proveedor->id class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                      </div>
+                    </ul>
+               </div>
+             </li>
+        /foreach
+        -->
     
     </div>
 

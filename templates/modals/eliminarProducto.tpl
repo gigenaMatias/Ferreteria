@@ -13,10 +13,10 @@
           <p class=" fs-4 text-black fw-bold text-center"> ¿Está seguro?</p>
       </div>
     
-        <div class="row justify-content-evenly mb-4">
+        <form class="row justify-content-evenly mb-4">
           <button type="button" class="btn btn-secondary col-4" data-bs-dismiss="modal">Cancelar</button>
           <button type="button" class="btn btn-primary col-4">Eliminar</button>
-        </div>         
+        </form>         
     
     </div>
   </div>
