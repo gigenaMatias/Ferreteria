@@ -30,6 +30,16 @@
             $this->vistaadmin->mostrarHome();
         }
 
+        //mostrar lista de proveedores
+        function mostrarProveedores(){
+            $this->vistaadmin->mostrarProveedores();
+        }
+
+        //mostrar lista clientes
+        function mostrarClientes(){
+            $this->vistaadmin->mostrarClientes();
+        }
+
         //busca producto por nombre
         function buscanombre(){
             if (!isset($_SESSION['USERNAME'])){

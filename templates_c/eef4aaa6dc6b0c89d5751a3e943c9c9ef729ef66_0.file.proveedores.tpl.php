@@ -1,4 +1,33 @@
-{include 'templates/header.tpl'}
+<?php
+/* Smarty version 3.1.39, created on 2022-12-27 20:26:20
+  from 'C:\xampp\htdocs\Ferreteria\templates\proveedores.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_63ab46dcad29c3_66012142',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'eef4aaa6dc6b0c89d5751a3e943c9c9ef729ef66' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\proveedores.tpl',
+      1 => 1672169176,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:templates/header.tpl' => 1,
+    'file:templates/modals/nuevoProveedor.tpl' => 1,
+    'file:templates/modals/eliminarProveedor.tpl' => 1,
+    'file:templates/modals/modificarProveedor.tpl' => 1,
+    'file:templates/footer.tpl' => 1,
+  ),
+),false)) {
+function content_63ab46dcad29c3_66012142 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
     <nav> <!--NAV-->
         <ul class="nav nav-tabs">
             <li class="nav-item col-4">
@@ -20,8 +49,9 @@
     </div>
 
     
-{include 'templates/modals/nuevoProveedor.tpl'}
-{include 'templates/modals/eliminarProveedor.tpl'}
+<?php $_smarty_tpl->_subTemplateRender('file:templates/modals/nuevoProveedor.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+$_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProveedor.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
 
     <!--bloque proveedores-->
@@ -88,10 +118,13 @@
         /foreach
         -->
     
-{include 'templates/modals/modificarProveedor.tpl'}
+<?php $_smarty_tpl->_subTemplateRender('file:templates/modals/modificarProveedor.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
     </div>
 
 
 
 
-{include 'templates/footer.tpl'}
+<?php $_smarty_tpl->_subTemplateRender('file:templates/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}

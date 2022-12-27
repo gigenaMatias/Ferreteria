@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-12-23 04:10:42
+/* Smarty version 3.1.39, created on 2022-12-27 21:15:55
   from 'C:\xampp\htdocs\Ferreteria\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_63a51c328ffa61_45446328',
+  'unifunc' => 'content_63ab527bdde724_23027121',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ba7af01aae9182ad2cdaac6bcdeb597bc7b34783' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\index.tpl',
-      1 => 1671764101,
+      1 => 1672172151,
       2 => 'file',
     ),
   ),
@@ -26,7 +26,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_63a51c328ffa61_45446328 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63ab527bdde724_23027121 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <nav> <!--NAV-->
@@ -34,11 +34,11 @@ $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cach
           <li class="nav-item col-4">
             <a class="nav-link active" aria-current="page" href="#">Inventario</a>
           </li>
-          <li class="nav-item col-4">
-            <a class="nav-link link-primary" href="#">Proveedores</a>
+          <li class="nav-item col-4 bg-secondary bg-opacity-50">
+            <a class="nav-link link-primary" href="proveedores">Proveedores</a>
           </li>
-          <li class="nav-item col-4">
-            <a class="nav-link link-primary" href="#">Clientes</a>
+          <li class="nav-item col-4 bg-secondary bg-opacity-50">
+            <a class="nav-link link-primary" href="clientes">Clientes</a>
           </li>
       </ul>
     </nav>
@@ -81,13 +81,13 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                 <option value="4">Opcion 4</option>
               </select>
           </div>
-            <button class="btn btn-primary col-1" type="button" aria-expanded="false"> Buscar </button>
+            <input class="btn btn-primary col-1" type="submit" value="Buscar" aria-expanded="false"/>
           </div>
         </form>
 
         <div class="container-fluid">
           <ul style="margin-block-end:0">
-            <li class="row text-white bg-dark -bg-opacity-80 align-items-center rounded-top">
+            <li class="row text-white bg-dark bg-opacity-80 align-items-center rounded-top">
               <div class="col"> Nombre </div>
               <div class="col"> Codigo </div>
               <div class="col"> proveedor </div>
@@ -99,9 +99,9 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
           </ul>
         </div>
         <!--planilla inventario-->
-        <div class="container-fluid">
+        <div class="container-fluid overflow-auto" style="max-height:60vh">
           <ul>
-            <li class="row text-white bg-primary  bg-opacity-75 align-items-center">
+            <li class="row text-white bg-primary bg-opacity-75 align-items-center">
                <div class="col"> Clavo X </div>
                <div class="col"> G275B-Z </div>
                <div class="col"> Opcion 2 </div>
@@ -227,6 +227,12 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
           </ul>
         </div>
 
+    </div>
+
+    <div class="row my-2 mx-4 justify-content-end">
+      <button type="button" class="btn btn-outline-success bg-opacity-50 col-1"> 
+        Imprimir Lista
+      </button>
     </div>
 <?php $_smarty_tpl->_subTemplateRender('file:templates/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }

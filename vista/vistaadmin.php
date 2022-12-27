@@ -27,6 +27,16 @@ class vistaadmin extends Visor{
         $this->getSmarty()->display('templates/index.tpl');
     }
 
+    //mostrar proveedores
+    function mostrarProveedores(){
+        $this->getSmarty()->display('templates/proveedores.tpl');
+    }
+
+    //mostrar clientes
+    function mostrarClientes(){
+        $this->getSmarty()->display('templates/clientes.tpl');
+    }
+
     //error 404
     function nosencontro(){
         $this->getSmarty()->display('templates/404.tpl');

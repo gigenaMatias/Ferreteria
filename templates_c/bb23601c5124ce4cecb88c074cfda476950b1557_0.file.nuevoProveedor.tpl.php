@@ -1,4 +1,27 @@
-<div class="modal fade" id="nuevoProveedorModal" tabindex="-1" aria-labelledby="nuevo-Producto" aria-hidden="true">
+<?php
+/* Smarty version 3.1.39, created on 2022-12-27 20:12:11
+  from 'C:\xampp\htdocs\Ferreteria\templates\modals\nuevoProveedor.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_63ab438bc0c124_49180190',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'bb23601c5124ce4cecb88c074cfda476950b1557' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\modals\\nuevoProveedor.tpl',
+      1 => 1672168324,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_63ab438bc0c124_49180190 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="modal fade" id="nuevoProveedorModal" tabindex="-1" aria-labelledby="nuevo-Producto" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -47,4 +70,5 @@
         </form>
     </div>
   </div>
-</div>
+</div><?php }
+}

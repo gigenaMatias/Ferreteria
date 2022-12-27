@@ -29,6 +29,14 @@
       case 'verify':
         $controlasesion->verify(); //verificacion de usuario y contraseña
       break;
+      
+      case 'proveedores':
+        $controlasesion->mostrarproveedores(); //lista proveedores
+      break;
+
+      case 'clientes':
+        $controlasesion->mostrarclientes();
+      break;
 
       default:
         echo '<h1> Error 404 lobby no encontrado :c</h1>'; // error 404

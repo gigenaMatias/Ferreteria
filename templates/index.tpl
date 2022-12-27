@@ -4,11 +4,11 @@
           <li class="nav-item col-4">
             <a class="nav-link active" aria-current="page" href="#">Inventario</a>
           </li>
-          <li class="nav-item col-4">
-            <a class="nav-link link-primary" href="#">Proveedores</a>
+          <li class="nav-item col-4 bg-secondary bg-opacity-50">
+            <a class="nav-link link-primary" href="proveedores">Proveedores</a>
           </li>
-          <li class="nav-item col-4">
-            <a class="nav-link link-primary" href="#">Clientes</a>
+          <li class="nav-item col-4 bg-secondary bg-opacity-50">
+            <a class="nav-link link-primary" href="clientes">Clientes</a>
           </li>
       </ul>
     </nav>
@@ -50,13 +50,13 @@
                 <option value="4">Opcion 4</option>
               </select>
           </div>
-            <button class="btn btn-primary col-1" type="button" aria-expanded="false"> Buscar </button>
+            <input class="btn btn-primary col-1" type="submit" value="Buscar" aria-expanded="false"/>
           </div>
         </form>
 
         <div class="container-fluid">
           <ul style="margin-block-end:0">
-            <li class="row text-white bg-dark -bg-opacity-80 align-items-center rounded-top">
+            <li class="row text-white bg-dark bg-opacity-80 align-items-center rounded-top">
               <div class="col"> Nombre </div>
               <div class="col"> Codigo </div>
               <div class="col"> proveedor </div>
@@ -68,9 +68,9 @@
           </ul>
         </div>
         <!--planilla inventario-->
-        <div class="container-fluid">
+        <div class="container-fluid overflow-auto" style="max-height:60vh">
           <ul>
-            <li class="row text-white bg-primary  bg-opacity-75 align-items-center">
+            <li class="row text-white bg-primary bg-opacity-75 align-items-center">
                <div class="col"> Clavo X </div>
                <div class="col"> G275B-Z </div>
                <div class="col"> Opcion 2 </div>
@@ -196,5 +196,11 @@
           </ul>
         </div>
 
+    </div>
+
+    <div class="row my-2 mx-4 justify-content-end">
+      <button type="button" class="btn btn-outline-success bg-opacity-50 col-1"> 
+        Imprimir Lista
+      </button>
     </div>
 {include 'templates/footer.tpl'}
