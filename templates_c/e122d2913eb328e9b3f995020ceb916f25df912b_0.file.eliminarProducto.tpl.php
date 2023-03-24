@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-12-22 21:16:04
-  from 'C:\xampp\htdocs\Ferreteria\templates\modals\modalEliminarProducto.tpl' */
+/* Smarty version 3.1.39, created on 2023-03-24 13:58:12
+  from 'C:\xampp\htdocs\ferreteria\templates\modals\eliminarProducto.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_63a4bb04c10ca0_96163898',
+  'unifunc' => 'content_641d9e646cbae0_61747137',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '7f60eccf54ebc9e23b1f814ffa4c58c2dcec7389' => 
+    'e122d2913eb328e9b3f995020ceb916f25df912b' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\modals\\modalEliminarProducto.tpl',
-      1 => 1671739838,
+      0 => 'C:\\xampp\\htdocs\\ferreteria\\templates\\modals\\eliminarProducto.tpl',
+      1 => 1679662391,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63a4bb04c10ca0_96163898 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641d9e646cbae0_61747137 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="modal fade" id="eliminarProductoModal" tabindex="-1" aria-labelledby="eliminar-Producto" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -36,10 +36,10 @@ function content_63a4bb04c10ca0_96163898 (Smarty_Internal_Template $_smarty_tpl)
           <p class=" fs-4 text-black fw-bold text-center"> ¿Está seguro?</p>
       </div>
     
-        <div class="row justify-content-evenly mb-4">
+        <form class="row justify-content-evenly mb-4">
           <button type="button" class="btn btn-secondary col-4" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary col-4">Eliminar</button>
-        </div>         
+          <input type="submit" class="btn btn-primary col-4" value="Eliminar"/>
+        </form>         
     
     </div>
   </div>

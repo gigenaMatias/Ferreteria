@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-12-27 19:39:59
-  from 'C:\xampp\htdocs\Ferreteria\templates\modals\modificarProducto.tpl' */
+/* Smarty version 3.1.39, created on 2023-03-24 13:58:12
+  from 'C:\xampp\htdocs\ferreteria\templates\modals\modificarProducto.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_63ab3bffba9d65_04817092',
+  'unifunc' => 'content_641d9e64693fa8_28628825',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '272832f9f49e27e7d38d8f641768592d4537a21e' => 
+    'f491a4ec48dd165056142f63a0297a39fc355a43' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\modals\\modificarProducto.tpl',
-      1 => 1672166272,
+      0 => 'C:\\xampp\\htdocs\\ferreteria\\templates\\modals\\modificarProducto.tpl',
+      1 => 1679662391,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63ab3bffba9d65_04817092 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641d9e64693fa8_28628825 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="modal fade" id="edicionProductoModal" tabindex="-1" aria-labelledby="edicion-Producto" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
