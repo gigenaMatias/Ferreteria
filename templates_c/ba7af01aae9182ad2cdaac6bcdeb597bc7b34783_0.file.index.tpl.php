@@ -1,4 +1,33 @@
-{include 'templates/header.tpl'}
+<?php
+/* Smarty version 3.1.39, created on 2023-03-24 13:53:50
+  from 'C:\xampp\htdocs\Ferreteria\templates\index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_641d9d5e5839a5_80342494',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'ba7af01aae9182ad2cdaac6bcdeb597bc7b34783' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\index.tpl',
+      1 => 1679662427,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:templates/header.tpl' => 1,
+    'file:templates/modals/nuevoProducto.tpl' => 1,
+    'file:templates/modals/modificarProducto.tpl' => 1,
+    'file:templates/modals/eliminarProducto.tpl' => 1,
+    'file:templates/footer.tpl' => 1,
+  ),
+),false)) {
+function content_641d9d5e5839a5_80342494 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
     <nav> <!--NAV-->
       <ul class="nav nav-tabs">
           <li class="nav-item col-4">
@@ -22,9 +51,10 @@
       </button>
     </div>
 
-{include 'templates/modals/nuevoProducto.tpl'}
-{include 'templates/modals/modificarProducto.tpl'}
-{include 'templates/modals/eliminarProducto.tpl'}
+<?php $_smarty_tpl->_subTemplateRender('file:templates/modals/nuevoProducto.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+$_smarty_tpl->_subTemplateRender('file:templates/modals/modificarProducto.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+$_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
     <!--bloque inventario-->
     <div class="container-fluid row my-1">
@@ -243,4 +273,6 @@
       </div>    
     </div>
 
-{include 'templates/footer.tpl'}
+<?php $_smarty_tpl->_subTemplateRender('file:templates/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}
