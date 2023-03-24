@@ -31,6 +31,7 @@
                 <li class="row text-white bg-dark -bg-opacity-80 align-items-center rounded-top">
                 <div class="col"> Nombre </div>
                 <div class="col"> Cuil </div>
+                <div class="col"> Desscuento </div>
                 <div class="col"> e-mail </div>
                 <div class="col"> Telefono </div>
                 <div class="col"> Direccion </div>
@@ -44,6 +45,7 @@
             <li class="row text-white bg-primary  bg-opacity-75 align-items-center">
                <div class="col"> Jorge Rial </div>
                <div class="col"> 1530258963 </div>
+               <div class="col"> 5% </div>
                <div class="col"> Jorgelin@gmail.com </div>
                <div class="col"> (2262) 69845 </div>
                <div class="col"> Lodejorge 8141 </div>

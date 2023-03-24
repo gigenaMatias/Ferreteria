@@ -17,12 +17,11 @@
       <button type="button" class="btn btn-success col-1" data-bs-toggle="modal" data-bs-target="#nuevoProductoModal"> 
         Nuevo producto
       </button>
-      <button type="button" class="btn btn-secondary col-1" data-bs-toggle="modal" data-bs-target="#talonarioModal">
-        Talonario
+      <button type="button" class="btn btn-outline-success bg-opacity-50 col-1">
+        Imprimir Lista
       </button>
     </div>
 
-{include 'templates/modals/talonario.tpl'}
 {include 'templates/modals/nuevoProducto.tpl'}
 {include 'templates/modals/modificarProducto.tpl'}
 {include 'templates/modals/eliminarProducto.tpl'}
@@ -68,7 +67,7 @@
           </ul>
         </div>
         <!--planilla inventario-->
-        <div class="container-fluid overflow-auto" style="max-height:60vh">
+        <div class="container-fluid overflow-auto" style="max-height:35vh">
           <ul>
             <li class="row text-white bg-primary bg-opacity-75 align-items-center">
                <div class="col"> Clavo X </div>
@@ -80,7 +79,7 @@
                <div class="dropdown col-1">
                 <div class="btn-group">
                     <button type="button" class="btn btn-success">
-                      +
+                      <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
@@ -88,7 +87,7 @@
                     <ul class="dropdown-menu bg-secondary bg-opacity-90">
                       <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Borrar</button>
                       </div>
                     </ul>
                </div>
@@ -103,7 +102,7 @@
                <div class="dropdown col-1">
                   <div class="btn-group">
                     <button type="button" class="btn btn-success">
-                      +
+                      <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                     <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
@@ -111,7 +110,7 @@
                       <ul class="dropdown-menu bg-primary bg-opacity-75">
                         <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                           <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
-                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Borrar</button>
                         </div>
                       </ul>
                   </div>  
@@ -127,7 +126,7 @@
                <div class="dropdown col-1">
                 <div class="btn-group">
                     <button type="button" class="btn btn-success">
-                      +
+                      <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
@@ -135,7 +134,7 @@
                     <ul class="dropdown-menu bg-secondary bg-opacity-90">
                       <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Borrar</button>
                       </div>
                     </ul>
                 </div>  
@@ -151,7 +150,7 @@
                <div class="dropdown col-1">
                   <div class="btn-group">
                     <button type="button" class="btn btn-success">
-                      +
+                      <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                     <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
@@ -159,7 +158,7 @@
                     <ul class="dropdown-menu bg-primary bg-opacity-75">
                       <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Borrar</button>
                       </div>
                     </ul>
                   </div>  
@@ -177,7 +176,7 @@
                   <div class="dropdown col-1">
                       <div class="btn-group">
                         <button type="button" class="btn btn-success">
-                          +
+                          <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                         <button type="button" id=$producto->id class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                           <span class="visually-hidden">Toggle Dropdown</span>
@@ -196,11 +195,46 @@
           </ul>
         </div>
 
+        <div class="container-fluid">
+          <h3> Talonario </h3>
+          <ul style="margin-block-end:0">
+            <li class="row text-white bg-dark bg-opacity-80 align-items-center rounded-top">
+              <div class="col"> Nombre </div>
+              <div class="col"> Codigo </div>
+              <div class="col"> proveedor </div>
+              <div class="col"> Cantidad </div>
+              <div class="col"> Precio </div>
+              <div class="col-1"> Acciones </div>
+            </li>
+          </ul>
+        </div>
+        <ul>
+        <ul style="max-height:35vh">
+          <li class="row text-white bg-primary bg-opacity-75 align-items-center">
+            <div class="col"> Clavo X </div>
+            <div class="col"> G275B-Z </div>
+            <div class="col"> Opcion 2 </div>
+            <div class="col"> 
+              <div class="row align-items-center">
+                <input type="text" class="form-control w-25 h-75" id="itemTalonario1" value="1">
+                <div class="col"> Cajas </div>
+              </div>
+            </div>
+            <div class="col"> 200$ c/Caja  </div>
+            <div class="dropdown col-1">
+            <div class="btn-group">
+            <button type="button" class="btn btn-danger">Borrar</button>
+           </div>
+          </li>
+        </ul>
+        <div class="row my-2 mx-4 justify-content-between">
+        <button type="button" class="btn btn-outline-success bg-opacity-50 col-1"> 
+          Imprimir
+        </button>
+        <button type="button" class="btn btn-danger bg-opacity-50 col-1">
+          Borrar
+        </button>
+      </div>    
     </div>
 
-    <div class="row my-2 mx-4 justify-content-end">
-      <button type="button" class="btn btn-outline-success bg-opacity-50 col-1"> 
-        Imprimir Lista
-      </button>
-    </div>
 {include 'templates/footer.tpl'}

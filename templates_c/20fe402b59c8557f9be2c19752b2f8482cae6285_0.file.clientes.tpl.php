@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-12-27 20:26:19
+/* Smarty version 3.1.39, created on 2023-03-24 12:42:54
   from 'C:\xampp\htdocs\Ferreteria\templates\clientes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_63ab46db064d24_56272089',
+  'unifunc' => 'content_641d8cbe2ea1a4_89015081',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '20fe402b59c8557f9be2c19752b2f8482cae6285' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\clientes.tpl',
-      1 => 1672169176,
+      1 => 1679658163,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_63ab46db064d24_56272089 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641d8cbe2ea1a4_89015081 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <nav> <!--NAV-->
@@ -61,6 +61,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarCliente.tpl', $_
                 <li class="row text-white bg-dark -bg-opacity-80 align-items-center rounded-top">
                 <div class="col"> Nombre </div>
                 <div class="col"> Cuil </div>
+                <div class="col"> Desscuento </div>
                 <div class="col"> e-mail </div>
                 <div class="col"> Telefono </div>
                 <div class="col"> Direccion </div>
@@ -74,6 +75,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarCliente.tpl', $_
             <li class="row text-white bg-primary  bg-opacity-75 align-items-center">
                <div class="col"> Jorge Rial </div>
                <div class="col"> 1530258963 </div>
+               <div class="col"> 5% </div>
                <div class="col"> Jorgelin@gmail.com </div>
                <div class="col"> (2262) 69845 </div>
                <div class="col"> Lodejorge 8141 </div>

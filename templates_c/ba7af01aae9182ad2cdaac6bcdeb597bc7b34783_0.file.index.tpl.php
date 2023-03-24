@@ -1,32 +1,31 @@
 <?php
-/* Smarty version 3.1.39, created on 2022-12-27 21:15:55
+/* Smarty version 3.1.39, created on 2023-03-24 13:17:39
   from 'C:\xampp\htdocs\Ferreteria\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_63ab527bdde724_23027121',
+  'unifunc' => 'content_641d94e396e279_83701196',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ba7af01aae9182ad2cdaac6bcdeb597bc7b34783' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\index.tpl',
-      1 => 1672172151,
+      1 => 1679660256,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:templates/header.tpl' => 1,
-    'file:templates/modals/talonario.tpl' => 1,
     'file:templates/modals/nuevoProducto.tpl' => 1,
     'file:templates/modals/modificarProducto.tpl' => 1,
     'file:templates/modals/eliminarProducto.tpl' => 1,
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_63ab527bdde724_23027121 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641d94e396e279_83701196 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <nav> <!--NAV-->
@@ -47,13 +46,12 @@ $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cach
       <button type="button" class="btn btn-success col-1" data-bs-toggle="modal" data-bs-target="#nuevoProductoModal"> 
         Nuevo producto
       </button>
-      <button type="button" class="btn btn-secondary col-1" data-bs-toggle="modal" data-bs-target="#talonarioModal">
-        Talonario
+      <button type="button" class="btn btn-outline-success bg-opacity-50 col-1">
+        Imprimir Lista
       </button>
     </div>
 
-<?php $_smarty_tpl->_subTemplateRender('file:templates/modals/talonario.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-$_smarty_tpl->_subTemplateRender('file:templates/modals/nuevoProducto.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+<?php $_smarty_tpl->_subTemplateRender('file:templates/modals/nuevoProducto.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender('file:templates/modals/modificarProducto.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -99,7 +97,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
           </ul>
         </div>
         <!--planilla inventario-->
-        <div class="container-fluid overflow-auto" style="max-height:60vh">
+        <div class="container-fluid overflow-auto" style="max-height:35vh">
           <ul>
             <li class="row text-white bg-primary bg-opacity-75 align-items-center">
                <div class="col"> Clavo X </div>
@@ -111,7 +109,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                <div class="dropdown col-1">
                 <div class="btn-group">
                     <button type="button" class="btn btn-success">
-                      +
+                      <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
@@ -119,7 +117,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                     <ul class="dropdown-menu bg-secondary bg-opacity-90">
                       <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Borrar</button>
                       </div>
                     </ul>
                </div>
@@ -134,7 +132,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                <div class="dropdown col-1">
                   <div class="btn-group">
                     <button type="button" class="btn btn-success">
-                      +
+                      <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                     <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
@@ -142,7 +140,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                       <ul class="dropdown-menu bg-primary bg-opacity-75">
                         <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                           <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
-                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Borrar</button>
                         </div>
                       </ul>
                   </div>  
@@ -158,7 +156,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                <div class="dropdown col-1">
                 <div class="btn-group">
                     <button type="button" class="btn btn-success">
-                      +
+                      <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
@@ -166,7 +164,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                     <ul class="dropdown-menu bg-secondary bg-opacity-90">
                       <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Borrar</button>
                       </div>
                     </ul>
                 </div>  
@@ -182,7 +180,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                <div class="dropdown col-1">
                   <div class="btn-group">
                     <button type="button" class="btn btn-success">
-                      +
+                      <i class="fa-solid fa-cart-shopping"></i>
                     </button>
                     <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
@@ -190,7 +188,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                     <ul class="dropdown-menu bg-primary bg-opacity-75">
                       <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Button</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Borrar</button>
                       </div>
                     </ul>
                   </div>  
@@ -208,7 +206,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                   <div class="dropdown col-1">
                       <div class="btn-group">
                         <button type="button" class="btn btn-success">
-                          +
+                          <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                         <button type="button" id=$producto->id class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                           <span class="visually-hidden">Toggle Dropdown</span>
@@ -227,13 +225,48 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
           </ul>
         </div>
 
+        <div class="container-fluid">
+          <h3> Talonario </h3>
+          <ul style="margin-block-end:0">
+            <li class="row text-white bg-dark bg-opacity-80 align-items-center rounded-top">
+              <div class="col"> Nombre </div>
+              <div class="col"> Codigo </div>
+              <div class="col"> proveedor </div>
+              <div class="col"> Cantidad </div>
+              <div class="col"> Precio </div>
+              <div class="col-1"> Acciones </div>
+            </li>
+          </ul>
+        </div>
+        <ul>
+        <ul style="max-height:35vh">
+          <li class="row text-white bg-primary bg-opacity-75 align-items-center">
+            <div class="col"> Clavo X </div>
+            <div class="col"> G275B-Z </div>
+            <div class="col"> Opcion 2 </div>
+            <div class="col"> 
+              <div class="row align-items-center">
+                <input type="text" class="form-control w-25 h-75" id="itemTalonario1" value="1">
+                <div class="col"> Cajas </div>
+              </div>
+            </div>
+            <div class="col"> 200$ c/Caja  </div>
+            <div class="dropdown col-1">
+            <div class="btn-group">
+            <button type="button" class="btn btn-danger">Borrar</button>
+           </div>
+          </li>
+        </ul>
+        <div class="row my-2 mx-4 justify-content-between">
+        <button type="button" class="btn btn-outline-success bg-opacity-50 col-1"> 
+          Imprimir
+        </button>
+        <button type="button" class="btn btn-danger bg-opacity-50 col-1">
+          Borrar
+        </button>
+      </div>    
     </div>
 
-    <div class="row my-2 mx-4 justify-content-end">
-      <button type="button" class="btn btn-outline-success bg-opacity-50 col-1"> 
-        Imprimir Lista
-      </button>
-    </div>
 <?php $_smarty_tpl->_subTemplateRender('file:templates/footer.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
 }
