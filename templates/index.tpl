@@ -87,7 +87,7 @@
                     <ul class="dropdown-menu bg-secondary bg-opacity-90">
                       <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Borrar</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal"><i class="fa-solid fa-trash"></i></button>
                       </div>
                     </ul>
                </div>
@@ -223,10 +223,16 @@
             <div class="col"> 200$ c/Caja  </div>
             <div class="dropdown col-1">
             <div class="btn-group">
-            <button type="button" class="btn btn-danger">Borrar</button>
+            <button type="button" class="btn btn-danger offset-11"><i class="fa-solid fa-square-minus"></i></button>
            </div>
           </li>
         </ul>
+
+        <div class="row "> 
+          <h4 class="col-1 offset-10">Total: </h4>
+          <p class="col-1 align-text-bottom">200$</p>
+        </div>
+
         <div class="row my-2 mx-4 justify-content-between">
         <button type="button" class="btn btn-outline-success bg-opacity-50 col-1"> 
           Imprimir

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-03-24 13:17:39
+/* Smarty version 3.1.39, created on 2023-03-24 13:53:50
   from 'C:\xampp\htdocs\Ferreteria\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_641d94e396e279_83701196',
+  'unifunc' => 'content_641d9d5e5839a5_80342494',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ba7af01aae9182ad2cdaac6bcdeb597bc7b34783' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Ferreteria\\templates\\index.tpl',
-      1 => 1679660256,
+      1 => 1679662427,
       2 => 'file',
     ),
   ),
@@ -25,7 +25,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/footer.tpl' => 1,
   ),
 ),false)) {
-function content_641d94e396e279_83701196 (Smarty_Internal_Template $_smarty_tpl) {
+function content_641d9d5e5839a5_80342494 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:templates/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <nav> <!--NAV-->
@@ -117,7 +117,7 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
                     <ul class="dropdown-menu bg-secondary bg-opacity-90">
                       <div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#edicionProductoModal">Editar</button>
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal">Borrar</button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminarProductoModal"><i class="fa-solid fa-trash"></i></button>
                       </div>
                     </ul>
                </div>
@@ -253,10 +253,16 @@ $_smarty_tpl->_subTemplateRender('file:templates/modals/eliminarProducto.tpl', $
             <div class="col"> 200$ c/Caja  </div>
             <div class="dropdown col-1">
             <div class="btn-group">
-            <button type="button" class="btn btn-danger">Borrar</button>
+            <button type="button" class="btn btn-danger offset-11"><i class="fa-solid fa-square-minus"></i></button>
            </div>
           </li>
         </ul>
+
+        <div class="row "> 
+          <h4 class="col-1 offset-10">Total: </h4>
+          <p class="col-1 align-text-bottom">200$</p>
+        </div>
+
         <div class="row my-2 mx-4 justify-content-between">
         <button type="button" class="btn btn-outline-success bg-opacity-50 col-1"> 
           Imprimir
