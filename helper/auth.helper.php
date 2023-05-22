@@ -3,7 +3,6 @@
 class AuthHelper {
 
     public function __construct() {
-    
     }
 
     static private function start() {
